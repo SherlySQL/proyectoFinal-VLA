@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,173 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+
+
+
+body {
+  background-color:white;
+  color:black !important;
 }
+
+
+hr {
+  border-color:lightgrey;
+}
+
+.fondoImagenmain{
+  background-image: url("imagenes/fondos/main9.jpg");
+  height: 650px;
+  width: 1000px;
+  margin: auto;
+}
+
+.responsive1 {
+  height:550px;
+  width: 100%;
+  margin: auto;
+}
+
+td, th{
+  padding: 5px 10px;
+  width: 100%;
+} 
+
+@media screen and (max-width:1000px){
+  .fondoImagenmain{
+     width: 100%;
+     height: 350px;
+     margin: auto;
+   }
+}
+
+@media screen and (max-width:500px){
+   .responsive1 {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+   }
+
+   .card{ margin-bottom: 270px;}
+}
+
+
+@media screen and (max-width:30em){
+  table {
+    width:100%;
+  }
+  
+  table tr{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid gray;
+  }
+} 
+
+
+.rounded:hover{
+  transform: scale(1.05);
+  /*box-shadow: 0 20px 50px #000;*/
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/*
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}*/
+
+.fondo{
+ /* background-color: #f3a683;*/
+  background-color:black;
+  color: white;
+}
+
+.titulo{
+  color: #e15f41;
+}
+
+.sombra{
+  border: solid;
+  border-color:#3dc1d3;
+  border-width: 3px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px #000;
+}
+
+
+.bordex{
+  border-width: 5px;
+  border-radius: 20px;
+  box-shadow: 0 15px 20px #000;
+}
+
+
+
+/*TARJETA GIRATORIA flip-card*/
+
+.card div{
+  backface-visibility: hidden; /*si la cara de adelante gira, no muestra la de atras*/
+  transition: .5s;
+  overflow: hidden;
+}
+
+.facefront{
+ transform: perspective(600px) rotateY(0deg);
+ border: solid;
+ border-color: #3dc1d3;
+ border-width: 3px;
+ border-radius: 20px;
+ box-shadow: 0 15px 20px #000;
+ position: absolute;
+}
+
+.faceback{
+  transform: perspective(600px) rotateY(180deg);
+  border: solid;
+  border-color:#3dc1d3;
+  border-width: 3px;
+  border-radius: 20px;
+  box-shadow: 0 15px 20px #000;
+ }
+
+
+ .card:hover .facefront{
+  transform: perspective(600px) rotateY(180deg);
+ }
+
+ .card:hover .faceback{
+  transform: perspective(600px) rotateY(360deg);
+ }
+
+
+
+/*ESTILOS PARA EL BOTON DE WhastApp*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+
