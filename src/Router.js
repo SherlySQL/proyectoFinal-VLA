@@ -23,8 +23,9 @@ class Router extends Component {
                     <Navbar /> 
                     {/* SISTEMA DE RUTAS  */}
                     {/* EXACT es para que nos tire las rutas exactas que aparecen en la barra de 
-                        navegación de internet  */}
+                        navegación de internet */}
                   
+                    
                     <Route exact path="/proyectoFinal-VLA" component={ Main } /> {/* Al Main no le puse objeto, 
                                                                  Para que al cargar la pagina, 
                                                                  Me muestre Main de una vez*/}
